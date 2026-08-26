@@ -52,7 +52,12 @@
 
             <div class="grilla-personajes">
                 <article class="tarjeta-personaje">
-                    <div class="avatar">MS</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/michael-scott.png"
+                            alt="Michael Scott"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Administración</span>
@@ -60,9 +65,9 @@
                         <p class="cargo">Gerente regional</p>
 
                         <p>
-                            Jefe de la sucursal de Scranton. Considera que
-                            sus empleados son su familia y que él es el mejor
-                            jefe del mundo.
+                            Jefe de la sucursal de Scranton. Considera que sus
+                            empleados son su familia y que él es el mejor jefe
+                            del mundo.
                         </p>
 
                         <blockquote>
@@ -72,7 +77,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">DS</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/dwight-schrute.png"
+                            alt="Dwight Schrute"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Ventas</span>
@@ -92,7 +102,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">JH</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/jim-halpert.png"
+                            alt="Jim Halpert"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Ventas</span>
@@ -112,7 +127,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">PB</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/pam-beesly.png"
+                            alt="Pam Beesly"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Recepción</span>
@@ -132,7 +152,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">KH</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/kevin-malone.png"
+                            alt="Kevin Malone"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Contabilidad</span>
@@ -152,7 +177,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">AM</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/angela-martin.png"
+                            alt="Angela Martin"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Contabilidad</span>
@@ -172,7 +202,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">SH</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/stanley-hudson.png"
+                            alt="Stanley Hudson"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Ventas</span>
@@ -192,7 +227,12 @@
                 </article>
 
                 <article class="tarjeta-personaje">
-                    <div class="avatar">TH</div>
+                    <div class="avatar">
+                        <img
+                            src="../img/personajes/toby-flenderson.png"
+                            alt="Toby Flenderson"
+                        >
+                    </div>
 
                     <div class="informacion-personaje">
                         <span class="departamento">Recursos Humanos</span>
@@ -201,8 +241,7 @@
 
                         <p>
                             Responsable de Recursos Humanos y principal
-                            obstáculo para las ideas de Michael, según
-                            Michael.
+                            obstáculo para las ideas de Michael, según Michael.
                         </p>
 
                         <blockquote>
@@ -210,6 +249,47 @@
                         </blockquote>
                     </div>
                 </article>
+            </div>
+            <div class="empleado-del-mes">
+                <div class="explicacion-premio">
+                    <p class="etiqueta">Programa de reconocimiento</p>
+                    <h2>Empleado del mes</h2>
+
+                    <p>
+                        Nuestro avanzado sistema analiza rendimiento, puntualidad,
+                        compañerismo y cercanía personal con el gerente regional.
+                    </p>
+
+                    <small>
+                        Sistema desarrollado y auditado por Michael Scott.
+                    </small>
+                </div>
+
+                <div class="maquina-premio">
+                    <div class="cabecera-maquina">
+                        SELECCIÓN IMPARCIAL Y DEFINITIVA
+                    </div>
+
+                    <div id="pantalla-empleado" class="pantalla-empleado">
+                        <span class="iniciales-ganador">?</span>
+
+                        <div>
+                            <small>Candidato actual</small>
+                            <strong id="nombre-ganador">Esperando selección</strong>
+                            <span id="cargo-ganador">Presioná el botón para comenzar</span>
+                        </div>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="elegir-empleado"
+                        class="elegir-empleado"
+                    >
+                        Elegir empleado del mes
+                    </button>
+
+                    <div id="resultado-premio" class="resultado-premio"></div>
+                </div>
             </div>
         </section>
     </main>
