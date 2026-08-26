@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dunder Mifflin | Ubicación</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+            <a href="../index.html" class="logo">
+                <span class="logo-principal">DUNDER MIFFLIN</span>
+                <span class="logo-secundario">Paper Company</span>
+            </a>
+
+            <button type="button" class="boton-menu" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion-principal">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="personajes.html" >Personajes</a></li>
+                    <li><a href="temporadas.html">Temporadas</a></li>
+                    <li><a href="momentos.html" >Momentos</a></li>
+                    <li><a href="ubicacion.html" class="activo">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="encabezado-pagina">
+            <div class="contenedor">
+                <p class="etiqueta">Cómo encontrarnos</p>
+                <h1>Ubicación</h1>
+
+                <p>
+                    Visitá la sucursal más productiva de Dunder Mifflin.
+                    Las visitas deben ser autorizadas por Recepción,
+                    Recursos Humanos y, lamentablemente, Dwight.
+                </p>
+            </div>
+        </section>
+
+        <section class="contenedor seccion-ubicacion">
+            <div class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">Sucursal Scranton</p>
+                    <h2>¿Dónde estamos?</h2>
+                </div>
+
+                <div class="sello-visita">
+                    Visitas posiblemente autorizadas
+                </div>
+            </div>
+
+            <div class="selector-ubicacion">
+                <button
+                    type="button"
+                    id="mostrar-ficcion"
+                    class="boton-ubicacion activo"
+                >
+                    Ubicación en la serie
+                </button>
+
+                <button
+                    type="button"
+                    id="mostrar-real"
+                    class="boton-ubicacion"
+                >
+                    Ubicación real de grabación
+                </button>
+            </div>
+
+            <div class="mapa-y-ficha">
+                <div class="contenedor-mapa">
+                    <iframe
+                        id="mapa-ubicacion"
+                        src="https://www.google.com/maps?q=Scranton,+Pennsylvania&output=embed"
+                        title="Mapa de Scranton, Pennsylvania"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                    <div class="etiqueta-mapa">
+                        <span id="tipo-mapa">UBICACIÓN FICTICIA</span>
+                        <strong id="nombre-mapa">Dunder Mifflin Scranton</strong>
+                    </div>
+                </div>
+
+                <aside class="ficha-ubicacion">
+                    <div class="encabezado-ficha">
+                        EXPEDIENTE DE LOCALIZACIÓN
+                    </div>
+
+                    <div class="contenido-ficha">
+                        <span id="estado-ubicacion" class="estado-ubicacion">
+                            Dirección registrada
+                        </span>
+
+                        <h3 id="nombre-ubicacion">
+                            Dunder Mifflin Scranton
+                        </h3>
+
+                        <address id="direccion-ubicacion">
+                            1725 Slough Avenue<br>
+                            Scranton, Pennsylvania
+                        </address>
+
+                        <div class="datos-ubicacion">
+                            <div>
+                                <span>Gerente regional</span>
+                                <strong id="gerente-ubicacion">
+                                    Michael Scott
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Actividad</span>
+                                <strong id="actividad-ubicacion">
+                                    Venta de papel
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Nivel de seguridad</span>
+                                <strong id="seguridad-ubicacion">
+                                    Excesivo, según Dwight
+                                </strong>
+                            </div>
+                        </div>
+
+                        <p id="aclaracion-ubicacion" class="aclaracion-ubicacion">
+                            Esta dirección pertenece al universo ficticio
+                            de la serie y no existe realmente en Scranton.
+                        </p>
+                    </div>
+
+                    <div id="sello-ubicacion" class="sello-ubicacion">
+                        Aprobado por<br>Michael Scott
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="instrucciones-visita">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <div>
+                        <p class="etiqueta">Antes de ingresar</p>
+                        <h2>Normas para visitantes</h2>
+                    </div>
+                </div>
+
+                <div class="grilla-normas">
+                    <article>
+                        <span>01</span>
+                        <h3>Anunciarse en recepción</h3>
+                        <p>
+                            Pam registrará su visita, salvo que esté ayudando
+                            a Jim con una broma.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>02</span>
+                        <h3>No alimentar a las palomas</h3>
+                        <p>
+                            Dwight considera que pueden ser utilizadas
+                            para espionaje industrial.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>03</span>
+                        <h3>Evitar Recursos Humanos</h3>
+                        <p>
+                            Esta norma fue incorporada personalmente
+                            por Michael y no posee validez legal.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>04</span>
+                        <h3>Conservar la calma</h3>
+                        <p>
+                            Si escucha una alarma de incendio, confirme
+                            primero si Dwight está realizando un simulacro.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+            <div>
+                <strong>Dunder Mifflin Paper Company</strong>
+                <p>1725 Slough Avenue, Scranton, Pennsylvania</p>
+            </div>
+
+            <p>Proyecto de Programación IV · Sitio no oficial de The Office</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +17,19 @@
                 Dunder Mifflin
             </a>
 
-            <nav>
+            <button type="button" class="boton-menu" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion-principal">
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="personajes.html" class="activo">Personajes</a></li>
                     <li><a href="temporadas.html">Temporadas</a></li>
                     <li><a href="momentos.html">Momentos</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,10 +61,7 @@
             <div class="grilla-personajes">
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/michael-scott.png"
-                            alt="Michael Scott"
-                        >
+                        <img src="../img/personajes/michael-scott.png" alt="Michael Scott">
                     </div>
 
                     <div class="informacion-personaje">
@@ -78,10 +83,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/dwight-schrute.png"
-                            alt="Dwight Schrute"
-                        >
+                        <img src="../img/personajes/dwight-schrute.png" alt="Dwight Schrute">
                     </div>
 
                     <div class="informacion-personaje">
@@ -103,10 +105,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/jim-halpert.png"
-                            alt="Jim Halpert"
-                        >
+                        <img src="../img/personajes/jim-halpert.png" alt="Jim Halpert">
                     </div>
 
                     <div class="informacion-personaje">
@@ -128,10 +127,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/pam-beesly.png"
-                            alt="Pam Beesly"
-                        >
+                        <img src="../img/personajes/pam-beesly.png" alt="Pam Beesly">
                     </div>
 
                     <div class="informacion-personaje">
@@ -153,10 +149,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/kevin-malone.png"
-                            alt="Kevin Malone"
-                        >
+                        <img src="../img/personajes/kevin-malone.png" alt="Kevin Malone">
                     </div>
 
                     <div class="informacion-personaje">
@@ -178,10 +171,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/angela-martin.png"
-                            alt="Angela Martin"
-                        >
+                        <img src="../img/personajes/angela-martin.png" alt="Angela Martin">
                     </div>
 
                     <div class="informacion-personaje">
@@ -203,10 +193,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/stanley-hudson.png"
-                            alt="Stanley Hudson"
-                        >
+                        <img src="../img/personajes/stanley-hudson.png" alt="Stanley Hudson">
                     </div>
 
                     <div class="informacion-personaje">
@@ -228,10 +215,7 @@
 
                 <article class="tarjeta-personaje">
                     <div class="avatar">
-                        <img
-                            src="../img/personajes/toby-flenderson.png"
-                            alt="Toby Flenderson"
-                        >
+                        <img src="../img/personajes/toby-flenderson.png" alt="Toby Flenderson">
                     </div>
 
                     <div class="informacion-personaje">
@@ -280,11 +264,7 @@
                         </div>
                     </div>
 
-                    <button
-                        type="button"
-                        id="elegir-empleado"
-                        class="elegir-empleado"
-                    >
+                    <button type="button" id="elegir-empleado" class="elegir-empleado">
                         Elegir empleado del mes
                     </button>
 
@@ -302,4 +282,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>

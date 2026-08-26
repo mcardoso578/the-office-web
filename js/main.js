@@ -340,3 +340,115 @@ if (
         });
     });
 }
+
+const botonFiccion = document.getElementById("mostrar-ficcion");
+const botonReal = document.getElementById("mostrar-real");
+const mapaUbicacion = document.getElementById("mapa-ubicacion");
+const tipoMapa = document.getElementById("tipo-mapa");
+const nombreMapa = document.getElementById("nombre-mapa");
+const estadoUbicacion = document.getElementById("estado-ubicacion");
+const nombreUbicacion = document.getElementById("nombre-ubicacion");
+const direccionUbicacion = document.getElementById("direccion-ubicacion");
+const gerenteUbicacion = document.getElementById("gerente-ubicacion");
+const actividadUbicacion = document.getElementById("actividad-ubicacion");
+const seguridadUbicacion = document.getElementById("seguridad-ubicacion");
+const aclaracionUbicacion = document.getElementById(
+    "aclaracion-ubicacion"
+);
+const selloUbicacion = document.getElementById("sello-ubicacion");
+
+if (
+    botonFiccion &&
+    botonReal &&
+    mapaUbicacion &&
+    tipoMapa &&
+    nombreMapa
+) {
+    botonFiccion.addEventListener("click", function () {
+        botonFiccion.classList.add("activo");
+        botonReal.classList.remove("activo");
+
+        mapaUbicacion.src =
+            "https://www.google.com/maps?q=Scranton,+Pennsylvania&output=embed";
+
+        mapaUbicacion.title = "Mapa de Scranton, Pennsylvania";
+
+        tipoMapa.textContent = "UBICACIÓN FICTICIA";
+        nombreMapa.textContent = "Dunder Mifflin Scranton";
+        estadoUbicacion.textContent = "Dirección registrada";
+        nombreUbicacion.textContent = "Dunder Mifflin Scranton";
+
+        direccionUbicacion.innerHTML =
+            "1725 Slough Avenue<br>Scranton, Pennsylvania";
+
+        gerenteUbicacion.textContent = "Michael Scott";
+        actividadUbicacion.textContent = "Venta de papel";
+        seguridadUbicacion.textContent =
+            "Excesivo, según Dwight";
+
+        aclaracionUbicacion.textContent =
+            "Esta dirección pertenece al universo ficticio de la serie y no existe realmente en Scranton.";
+
+        selloUbicacion.innerHTML =
+            "Aprobado por<br>Michael Scott";
+    });
+
+    botonReal.addEventListener("click", function () {
+        botonReal.classList.add("activo");
+        botonFiccion.classList.remove("activo");
+
+        mapaUbicacion.src =
+            "https://www.google.com/maps?q=13927+Saticoy+Street,+Van+Nuys,+California&output=embed";
+
+        mapaUbicacion.title =
+            "Mapa de la ubicación real de grabación";
+
+        tipoMapa.textContent = "UBICACIÓN REAL";
+        nombreMapa.textContent = "Estudio de grabación";
+        estadoUbicacion.textContent = "Localización de producción";
+        nombreUbicacion.textContent =
+            "Chandler Valley Center Studios";
+
+        direccionUbicacion.innerHTML =
+            "13927 Saticoy Street<br>Van Nuys, California";
+
+        gerenteUbicacion.textContent = "Equipo de producción";
+        actividadUbicacion.textContent =
+            "Filmación de interiores y exteriores";
+
+        seguridadUbicacion.textContent =
+            "Propiedad privada";
+
+        aclaracionUbicacion.textContent =
+            "Este edificio fue utilizado para representar el Scranton Business Park y las oficinas de Dunder Mifflin.";
+
+        selloUbicacion.innerHTML =
+            "Ubicación<br>real";
+    });
+}
+
+const botonesMenu = document.querySelectorAll(".boton-menu");
+
+botonesMenu.forEach(function (botonMenu) {
+    const encabezado = botonMenu.closest(".navegacion");
+    const menuNavegacion = encabezado.querySelector(
+        ".navegacion-principal"
+    );
+
+    botonMenu.addEventListener("click", function () {
+        const menuEstaAbierto = menuNavegacion.classList.toggle(
+            "visible"
+        );
+
+        botonMenu.classList.toggle("abierto", menuEstaAbierto);
+        botonMenu.setAttribute("aria-expanded", menuEstaAbierto);
+    });
+
+    menuNavegacion.querySelectorAll("a").forEach(function (enlace) {
+        enlace.addEventListener("click", function () {
+            menuNavegacion.classList.remove("visible");
+            botonMenu.classList.remove("abierto");
+            botonMenu.setAttribute("aria-expanded", "false");
+        });
+    });
+});
