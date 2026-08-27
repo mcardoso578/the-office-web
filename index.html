@@ -266,6 +266,129 @@
                 </div>
             </div>
         </section>
+        <section class="seccion-solicitud">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <div>
+                        <p class="etiqueta">Recursos Humanos</p>
+                        <h2>Solicitud de empleo</h2>
+                    </div>
+
+                    <div class="sello-solicitud">
+                        Toby revisará esto
+                    </div>
+                </div>
+
+                <div class="solicitud-contenido">
+                    <div class="introduccion-solicitud">
+                        <span class="numero-formulario">FORM. DM-001</span>
+
+                        <h3>¿Querés trabajar en Dunder Mifflin?</h3>
+
+                        <p>
+                            Completá esta solicitud para formar parte de la sucursal
+                            Scranton. No podemos garantizar que Recursos Humanos
+                            responda ni que Michael lea correctamente tu currículum.
+                        </p>
+
+                        <blockquote>
+                            “The people that you work with are, when you get down
+                            to it, your very best friends.”
+                        </blockquote>
+
+                        <div class="advertencia-solicitud">
+                            <strong>Importante:</strong>
+                            las habilidades de supervivencia contra osos solamente
+                            serán evaluadas por Dwight Schrute.
+                        </div>
+                    </div>
+
+                    <form id="formulario-empleo" class="formulario-empleo">
+                        <div class="campo-formulario">
+                            <label for="nombre-candidato">
+                                Nombre y apellido
+                            </label>
+
+                            <input type="text" id="nombre-candidato" name="nombre" placeholder="Ejemplo: David Wallace"
+                                required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="correo-candidato">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email" id="correo-candidato" name="correo" placeholder="nombre@correo.com"
+                                required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="departamento-candidato">
+                                Departamento solicitado
+                            </label>
+
+                            <select id="departamento-candidato" name="departamento" required>
+                                <option value="">Seleccionar departamento</option>
+                                <option value="Ventas">Ventas</option>
+                                <option value="Contabilidad">Contabilidad</option>
+                                <option value="Recepción">Recepción</option>
+                                <option value="Recursos Humanos">
+                                    Recursos Humanos
+                                </option>
+                                <option value="Control de calidad">
+                                    Control de calidad
+                                </option>
+                                <option value="Asistente del gerente regional">
+                                    Asistente del gerente regional
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="experiencia-candidato">
+                                Años de experiencia
+                            </label>
+
+                            <input type="number" id="experiencia-candidato" name="experiencia" min="0" max="50"
+                                placeholder="0" required>
+                        </div>
+
+                        <div class="campo-formulario campo-completo">
+                            <label for="motivacion-candidato">
+                                ¿Por qué querés trabajar con nosotros?
+                            </label>
+
+                            <textarea id="motivacion-candidato" name="motivacion" rows="5" minlength="20"
+                                placeholder="Convencé a Michael en al menos 20 caracteres..." required></textarea>
+                        </div>
+
+                        <div class="campo-completo">
+                            <label class="confirmacion-formulario">
+                                <input type="checkbox" id="acepta-condiciones" required>
+
+                                <span>
+                                    Acepto participar en reuniones innecesarias,
+                                    simulacros de incendio y ceremonias improvisadas.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="campo-completo acciones-formulario">
+                            <button type="submit" class="boton-principal">
+                                Enviar solicitud a Recursos Humanos
+                            </button>
+
+                            <button type="reset" class="boton-limpiar">
+                                Limpiar formulario
+                            </button>
+                        </div>
+
+                        <div id="respuesta-formulario" class="respuesta-formulario" role="status" aria-live="polite">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="pie">

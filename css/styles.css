@@ -2822,3 +2822,203 @@ body.modal-abierto {
         grid-template-columns: 1fr;
     }
 }
+
+/* Formulario de solicitud de empleo */
+
+.seccion-solicitud {
+    padding-block: 85px;
+    background-color: var(--beige);
+}
+
+.sello-solicitud {
+    max-width: 175px;
+    padding: 9px 12px;
+    color: var(--bordo);
+    border: 4px double var(--bordo);
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(4deg);
+}
+
+.solicitud-contenido {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.introduccion-solicitud,
+.formulario-empleo {
+    background-color: var(--papel-claro);
+    border: 2px solid var(--marron-oscuro);
+    box-shadow: 7px 9px 0 var(--marron-medio);
+}
+
+.introduccion-solicitud {
+    padding: 35px;
+}
+
+.numero-formulario {
+    color: var(--bordo);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.introduccion-solicitud h3 {
+    margin: 10px 0 15px;
+    color: var(--marron-oscuro);
+    font-size: 1.8rem;
+    line-height: 1.1;
+}
+
+.introduccion-solicitud p {
+    color: var(--gris);
+    line-height: 1.7;
+}
+
+.introduccion-solicitud blockquote {
+    margin: 25px 0;
+    padding: 18px;
+    color: var(--marron-oscuro);
+    background-color: var(--beige);
+    border-left: 5px solid var(--mostaza);
+    font-style: italic;
+}
+
+.advertencia-solicitud {
+    padding: 15px;
+    color: var(--marron-oscuro);
+    background-color: #ead9b8;
+    border: 1px dashed var(--marron-medio);
+    font-size: 0.85rem;
+}
+
+.formulario-empleo {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.campo-formulario label {
+    margin-bottom: 8px;
+    display: block;
+    color: var(--marron-oscuro);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 13px 14px;
+    color: var(--marron-oscuro);
+    background-color: #fffdf7;
+    border: 2px solid var(--marron-claro);
+    border-radius: 2px;
+    font: inherit;
+}
+
+.campo-formulario textarea {
+    min-height: 125px;
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: 3px solid rgb(194 145 52 / 25%);
+    border-color: var(--mostaza);
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.confirmacion-formulario {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: var(--gris);
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.confirmacion-formulario input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--bordo);
+}
+
+.acciones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.acciones-formulario button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton-limpiar {
+    padding: 12px 18px;
+    color: var(--marron-oscuro);
+    background-color: transparent;
+    border: 2px solid var(--marron-medio);
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+.boton-limpiar:hover {
+    background-color: var(--beige);
+}
+
+.respuesta-formulario {
+    grid-column: 1 / -1;
+    display: none;
+    padding: 18px;
+    color: var(--marron-oscuro);
+    background-color: #e8d7ad;
+    border: 2px dashed var(--bordo);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.respuesta-formulario.visible {
+    display: block;
+}
+
+@media (max-width: 850px) {
+    .solicitud-contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario-empleo {
+        padding: 25px;
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .acciones-formulario {
+        display: grid;
+    }
+
+    .acciones-formulario button {
+        width: 100%;
+    }
+}

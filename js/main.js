@@ -452,3 +452,64 @@ botonesMenu.forEach(function (botonMenu) {
         });
     });
 });
+
+const formularioEmpleo = document.getElementById("formulario-empleo");
+const respuestaFormulario = document.getElementById(
+    "respuesta-formulario"
+);
+
+if (formularioEmpleo && respuestaFormulario) {
+    formularioEmpleo.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const nombre = document
+            .getElementById("nombre-candidato")
+            .value
+            .trim();
+
+        const departamento = document.getElementById(
+            "departamento-candidato"
+        ).value;
+
+        const respuestasPorDepartamento = {
+            "Ventas":
+                "Michael revisará personalmente tu capacidad para cerrar una venta durante una conversación incómoda.",
+
+            "Contabilidad":
+                "Angela analizará tu solicitud. Kevin intentará ayudar, pero recomendamos revisar todos los cálculos.",
+
+            "Recepción":
+                "Pam recibió tu solicitud y prometió esconderla si Michael intenta dibujar sobre ella.",
+
+            "Recursos Humanos":
+                "Tu solicitud fue enviada a Toby. Michael ha rechazado formalmente la existencia de este departamento.",
+
+            "Control de calidad":
+                "Creed recibió tu solicitud, aunque nadie sabe con certeza si actualmente trabaja en ese departamento.",
+
+            "Asistente del gerente regional":
+                "Dwight informa que el puesto correcto es asistente del gerente regional, no asistente para el gerente regional."
+        };
+
+        const mensajeDepartamento =
+            respuestasPorDepartamento[departamento];
+
+        respuestaFormulario.innerHTML = `
+            <strong>Solicitud registrada, ${nombre}.</strong><br>
+            ${mensajeDepartamento}<br><br>
+            Número de expediente:
+            <strong>DM-${Math.floor(Math.random() * 9000) + 1000}</strong>
+        `;
+
+        respuestaFormulario.classList.add("visible");
+        respuestaFormulario.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+    });
+
+    formularioEmpleo.addEventListener("reset", function () {
+        respuestaFormulario.classList.remove("visible");
+        respuestaFormulario.innerHTML = "";
+    });
+}
