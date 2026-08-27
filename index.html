@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +18,7 @@
                 <span class="logo-secundario">Paper Company</span>
             </a>
 
-            <button
-                type="button"
-                class="boton-menu"
-                aria-label="Abrir menú de navegación"
-                aria-expanded="false"
-            >
+            <button type="button" class="boton-menu" aria-label="Abrir menú de navegación" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -64,11 +60,11 @@
 
                     <div class="acciones-portada">
                         <a href="pages/personajes.html" class="boton-principal">
-                            Ver directorio de empleados
+                            Investigar a mis compañeros
                         </a>
 
                         <a href="pages/momentos.html" class="boton-secundario">
-                            Consultar incidentes
+                            Ver incidentes reportados por Toby
                         </a>
                     </div>
                 </div>
@@ -84,10 +80,7 @@
                         </div>
 
                         <div class="foto-credencial">
-                            <img
-                                src="img/personajes/michael-scott.png"
-                                alt="Michael Scott"
-                            >
+                            <img src="img/personajes/michael-scott.png" alt="Michael Scott">
                         </div>
 
                         <div class="datos-credencial">
@@ -231,6 +224,7 @@
                 <div class="grilla-accesos">
                     <a href="pages/personajes.html" class="acceso acceso-empleados">
                         <span class="numero-acceso">01</span>
+
                         <div>
                             <span>Directorio corporativo</span>
                             <h3>Conocé a los empleados</h3>
@@ -240,6 +234,7 @@
 
                     <a href="pages/temporadas.html" class="acceso acceso-temporadas">
                         <span class="numero-acceso">02</span>
+
                         <div>
                             <span>Archivo documental</span>
                             <h3>Recorré las temporadas</h3>
@@ -249,10 +244,23 @@
 
                     <a href="pages/momentos.html" class="acceso acceso-incidentes">
                         <span class="numero-acceso">03</span>
+
                         <div>
                             <span>Documentos confidenciales</span>
                             <h3>Revisá los incidentes</h3>
                             <p>Casos que Recursos Humanos quiso ocultar.</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/ubicacion.html" class="acceso acceso-ubicacion">
+                        <span class="numero-acceso">04</span>
+
+                        <div>
+                            <span>Coordenadas corporativas</span>
+                            <h3>Encontrá la sucursal</h3>
+                            <p>
+                                Descubrí dónde está Scranton y dónde se filmó realmente.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -272,12 +280,7 @@
     </footer>
     <!-- Botón de emergencia -->
 
-    <button
-        type="button"
-        id="boton-emergencia"
-        class="boton-emergencia"
-        aria-label="Activar protocolo de emergencia"
-    >
+    <button type="button" id="boton-emergencia" class="boton-emergencia" aria-label="Activar protocolo de emergencia">
         <span>NO PRESIONAR</span>
         Emergencia
     </button>
@@ -286,12 +289,7 @@
 
     <div id="modal-emergencia" class="modal-emergencia" aria-hidden="true">
         <div class="alerta-dwight">
-            <button
-                type="button"
-                id="cerrar-emergencia"
-                class="cerrar-emergencia"
-                aria-label="Cerrar ventana"
-            >
+            <button type="button" id="cerrar-emergencia" class="cerrar-emergencia" aria-label="Cerrar ventana">
                 ×
             </button>
 
@@ -321,4 +319,5 @@
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>

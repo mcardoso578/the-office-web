@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,9 @@
             <nav class="navegacion-principal">
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="personajes.html" >Personajes</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
                     <li><a href="temporadas.html">Temporadas</a></li>
-                    <li><a href="momentos.html" >Momentos</a></li>
+                    <li><a href="momentos.html">Momentos</a></li>
                     <li><a href="ubicacion.html" class="activo">Ubicación</a></li>
                 </ul>
             </nav>
@@ -62,33 +63,20 @@
             </div>
 
             <div class="selector-ubicacion">
-                <button
-                    type="button"
-                    id="mostrar-ficcion"
-                    class="boton-ubicacion activo"
-                >
+                <button type="button" id="mostrar-ficcion" class="boton-ubicacion activo">
                     Ubicación en la serie
                 </button>
 
-                <button
-                    type="button"
-                    id="mostrar-real"
-                    class="boton-ubicacion"
-                >
+                <button type="button" id="mostrar-real" class="boton-ubicacion">
                     Ubicación real de grabación
                 </button>
             </div>
 
             <div class="mapa-y-ficha">
                 <div class="contenedor-mapa">
-                    <iframe
-                        id="mapa-ubicacion"
-                        src="https://www.google.com/maps?q=Scranton,+Pennsylvania&output=embed"
-                        title="Mapa de Scranton, Pennsylvania"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        allowfullscreen
-                    ></iframe>
+                    <iframe id="mapa-ubicacion" src="https://www.google.com/maps?q=Scranton,+Pennsylvania&output=embed"
+                        title="Mapa de Scranton, Pennsylvania" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 
                     <div class="etiqueta-mapa">
                         <span id="tipo-mapa">UBICACIÓN FICTICIA</span>
@@ -214,4 +202,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>

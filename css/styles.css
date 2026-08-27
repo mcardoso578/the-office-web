@@ -2802,3 +2802,23 @@ body.modal-abierto {
         border-left: 4px solid var(--mostaza);
     }
 }
+
+/* Ajustes finales de los accesos del inicio */
+
+.grilla-accesos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.acceso {
+    min-height: 245px;
+}
+
+.acceso-ubicacion {
+    background: linear-gradient(145deg, #92774d, #635036);
+}
+
+@media (max-width: 700px) {
+    .grilla-accesos {
+        grid-template-columns: 1fr;
+    }
+}
