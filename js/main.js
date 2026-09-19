@@ -513,3 +513,55 @@ if (formularioEmpleo && respuestaFormulario) {
         respuestaFormulario.innerHTML = "";
     });
 }
+
+/* ==================================================
+   FORMULARIO DE CONTACTO
+   ================================================== */
+
+const formularioContacto = document.getElementById(
+    "formulario-contacto"
+);
+
+const respuestaContacto = document.getElementById(
+    "respuesta-contacto"
+);
+
+if (formularioContacto && respuestaContacto) {
+    formularioContacto.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const nombre = document
+            .getElementById("nombre-contacto")
+            .value
+            .trim();
+
+        const departamento = document.getElementById(
+            "departamento-contacto"
+        ).value;
+
+        const motivo = document.getElementById(
+            "motivo-contacto"
+        ).value;
+
+        const numeroConsulta =
+            Math.floor(Math.random() * 9000) + 1000;
+
+        respuestaContacto.textContent =
+            `Consulta enviada correctamente, ${nombre}. ` +
+            `El departamento de ${departamento} recibió tu mensaje ` +
+            `por "${motivo}". Número de seguimiento: DM-${numeroConsulta}. ` +
+            `Pam intentará responder antes de que Michael interrumpa.`;
+
+        respuestaContacto.classList.add("visible");
+
+        respuestaContacto.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+    });
+
+    formularioContacto.addEventListener("reset", function () {
+        respuestaContacto.classList.remove("visible");
+        respuestaContacto.textContent = "";
+    });
+}

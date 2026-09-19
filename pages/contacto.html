@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dunder Mifflin | Contacto</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+            <a href="../index.html" class="logo">
+                <span class="logo-principal">DUNDER MIFFLIN</span>
+                <span class="logo-secundario">Paper Company</span>
+            </a>
+
+            <button
+                type="button"
+                class="boton-menu"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion-principal">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="temporadas.html">Temporadas</a></li>
+                    <li><a href="momentos.html">Momentos</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li>
+                        <a href="contacto.html" class="activo">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="encabezado-pagina">
+            <div class="contenedor">
+                <p class="etiqueta">Atención corporativa</p>
+
+                <h1>Contacto</h1>
+
+                <p>
+                    Enviá tu consulta a la sucursal Scranton. Será recibida
+                    por Pam y posiblemente ignorada por Michael.
+                </p>
+            </div>
+        </section>
+
+        <section class="seccion-contacto">
+            <div class="contenedor contacto-contenido">
+                <div class="informacion-contacto">
+                    <p class="etiqueta">Dunder Mifflin Scranton</p>
+
+                    <h2>Comunicate con nosotros</h2>
+
+                    <p>
+                        Completá el formulario para enviar una consulta,
+                        informar un problema o solicitar una reunión
+                        completamente innecesaria.
+                    </p>
+
+                    <div class="datos-contacto">
+                        <div>
+                            <span>Dirección</span>
+                            <strong>
+                                1725 Slough Avenue, Scranton
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Teléfono</span>
+                            <strong>1-800-PAPER</strong>
+                        </div>
+
+                        <div>
+                            <span>Horario</span>
+                            <strong>Lunes a viernes, de 9 a 17 h</strong>
+                        </div>
+
+                        <div>
+                            <span>Gerente regional</span>
+                            <strong>Michael Scott</strong>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        “Our business is paper, but our real business
+                        is people.”
+                    </blockquote>
+                </div>
+
+                <form id="formulario-contacto" class="formulario-contacto">
+                    <div class="campo-contacto">
+                        <label for="nombre-contacto">
+                            Nombre y apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre-contacto"
+                            name="nombre"
+                            placeholder="Ejemplo: David Wallace"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-contacto">
+                        <label for="correo-contacto">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo-contacto"
+                            name="correo"
+                            placeholder="nombre@correo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-contacto">
+                        <label for="departamento-contacto">
+                            Departamento
+                        </label>
+
+                        <select
+                            id="departamento-contacto"
+                            name="departamento"
+                            required
+                        >
+                            <option value="">Seleccionar</option>
+                            <option value="Ventas">Ventas</option>
+                            <option value="Contabilidad">
+                                Contabilidad
+                            </option>
+                            <option value="Recursos Humanos">
+                                Recursos Humanos
+                            </option>
+                            <option value="Gerencia">Gerencia</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-contacto">
+                        <label for="motivo-contacto">
+                            Motivo
+                        </label>
+
+                        <select
+                            id="motivo-contacto"
+                            name="motivo"
+                            required
+                        >
+                            <option value="">Seleccionar</option>
+                            <option value="Consulta general">
+                                Consulta general
+                            </option>
+                            <option value="Compra de papel">
+                                Compra de papel
+                            </option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Emergencia causada por Dwight">
+                                Emergencia causada por Dwight
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="campo-contacto campo-contacto-completo">
+                        <label for="mensaje-contacto">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje-contacto"
+                            name="mensaje"
+                            rows="6"
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Escribí tu consulta..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <label class="aceptacion-contacto campo-contacto-completo">
+                        <input
+                            type="checkbox"
+                            id="acepta-contacto"
+                            required
+                        >
+
+                        <span>
+                            Confirmo que esta consulta no forma parte
+                            de una broma organizada por Jim Halpert.
+                        </span>
+                    </label>
+
+                    <div class="acciones-contacto campo-contacto-completo">
+                        <button type="submit" class="boton-principal">
+                            Enviar consulta
+                        </button>
+
+                        <button type="reset" class="boton-limpiar">
+                            Limpiar
+                        </button>
+                    </div>
+
+                    <div
+                        id="respuesta-contacto"
+                        class="respuesta-contacto campo-contacto-completo"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+            <div>
+                <strong>Dunder Mifflin Paper Company</strong>
+                <p>1725 Slough Avenue, Scranton, Pennsylvania</p>
+            </div>
+
+            <p>
+                Proyecto de Programación IV · Sitio no oficial de The Office
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
