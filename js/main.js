@@ -583,3 +583,25 @@ botonesSubmenu.forEach(function (botonSubmenu) {
         botonSubmenu.setAttribute("aria-expanded", estaAbierto);
     });
 });
+
+/* ==================================================
+   GALERÍA GLIGHTBOX
+   ================================================== */
+
+const elementosGaleria = document.querySelectorAll(".glightbox");
+
+if (
+    elementosGaleria.length > 0 &&
+    typeof GLightbox !== "undefined"
+) {
+    GLightbox({
+        selector: ".glightbox",
+        touchNavigation: true,
+        loop: true,
+        zoomable: true,
+        draggable: true,
+        openEffect: "zoom",
+        closeEffect: "fade",
+        slideEffect: "slide"
+    });
+}

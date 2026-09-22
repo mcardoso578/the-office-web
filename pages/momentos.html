@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dunder Mifflin | Momentos</title>
+    <title>Dunder Mifflin | Galería</title>
 
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
 </head>
 
 <body>
@@ -64,7 +66,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="momentos.html" class="activo">Momentos</a></li>
+                    <li><a href="momentos.html" class="activo">Galería</a></li>
                     <li><a href="ubicacion.html">Ubicación</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -75,12 +77,12 @@
     <main>
         <section class="encabezado-pagina">
             <div class="contenedor">
-                <p class="etiqueta">Incidentes documentados</p>
-                <h1>Momentos destacados</h1>
+                <p class="etiqueta">Archivo fotográfico</p>
+                <h1>Galería de imágenes</h1>
 
                 <p>
-                    Una selección de eventos memorables que Recursos Humanos
-                    probablemente preferiría eliminar del archivo corporativo.
+                    Una selección visual de personajes, episodios y situaciones
+                    memorables ocurridas en la sucursal Scranton.
                 </p>
             </div>
         </section>
@@ -88,145 +90,165 @@
         <section class="contenedor seccion-momentos">
             <div class="titulo-seccion">
                 <div>
-                    <p class="etiqueta">Archivo confidencial</p>
-                    <h2>Los casos más recordados</h2>
+                    <p class="etiqueta">Registro audiovisual</p>
+                    <h2>Momentos inolvidables</h2>
                 </div>
 
                 <p class="cantidad-empleados">Acceso autorizado por Michael Scott</p>
             </div>
 
-            <div class="grilla-momentos">
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-incendio">
-                        <span>01</span>
-                    </div>
+            <div class="galeria-office">
+                <a
+                    href="../img/personajes/dwight-schrute.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="El simulacro de incendio"
+                    data-description="Dwight pone a prueba la preparación de toda la oficina."
+                >
+                    <img
+                        src="../img/personajes/dwight-schrute.png"
+                        alt="Dwight Schrute durante un incidente en la oficina"
+                        loading="lazy"
+                    >
 
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 5</span>
+                    <div class="informacion-galeria">
+                        <span>Temporada 5</span>
                         <h3>El simulacro de incendio</h3>
-
-                        <p>
-                            Dwight bloquea las salidas e inicia un incendio
-                            controlado para demostrar que sus compañeros no
-                            están preparados para una emergencia.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Responsable</span>
-                            <strong>Dwight Schrute</strong>
-                        </div>
                     </div>
-                </article>
+                </a>
 
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-chili">
-                        <span>02</span>
+                <a
+                    href="../img/personajes/kevin-malone.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="El famoso chili de Kevin"
+                    data-description="La receta familiar de Kevin no llega intacta a la oficina."
+                >
+                    <img
+                        src="../img/personajes/kevin-malone.png"
+                        alt="Kevin Malone y su famoso chili"
+                        loading="lazy"
+                    >
+
+                    <div class="informacion-galeria">
+                        <span>Temporada 5</span>
+                        <h3>El chili de Kevin</h3>
                     </div>
+                </a>
 
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 5</span>
-                        <h3>El famoso chili de Kevin</h3>
+                <a
+                    href="../img/personajes/jim-halpert.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="Casino Night"
+                    data-description="Jim finalmente le confiesa a Pam lo que siente."
+                >
+                    <img
+                        src="../img/personajes/jim-halpert.png"
+                        alt="Jim Halpert durante Casino Night"
+                        loading="lazy"
+                    >
 
-                        <p>
-                            Kevin prepara durante horas su receta familiar,
-                            pero el traslado de la olla hasta la oficina no
-                            sale exactamente como esperaba.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Responsable</span>
-                            <strong>Kevin Malone</strong>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-beso">
-                        <span>03</span>
-                    </div>
-
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 2</span>
+                    <div class="informacion-galeria">
+                        <span>Temporada 2</span>
                         <h3>Casino Night</h3>
-
-                        <p>
-                            Durante una noche de casino organizada en el
-                            depósito, Jim finalmente le confiesa a Pam lo
-                            que siente por ella.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Protagonistas</span>
-                            <strong>Jim y Pam</strong>
-                        </div>
                     </div>
-                </article>
+                </a>
 
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-dinner">
-                        <span>04</span>
-                    </div>
+                <a
+                    href="../img/personajes/angela-martin.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="Dinner Party"
+                    data-description="Una cena que se convierte en una noche inolvidablemente incómoda."
+                >
+                    <img
+                        src="../img/personajes/angela-martin.png"
+                        alt="Cena organizada por Michael y Jan"
+                        loading="lazy"
+                    >
 
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 4</span>
+                    <div class="informacion-galeria">
+                        <span>Temporada 4</span>
                         <h3>Dinner Party</h3>
-
-                        <p>
-                            Michael y Jan invitan a sus compañeros a una cena
-                            que rápidamente se convierte en una de las noches
-                            más incómodas de sus vidas.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Anfitriones</span>
-                            <strong>Michael y Jan</strong>
-                        </div>
                     </div>
-                </article>
+                </a>
 
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-boda">
-                        <span>05</span>
+                <a
+                    href="../img/personajes/pam-beesly.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="La boda de Jim y Pam"
+                    data-description="El equipo celebra la boda en las Cataratas del Niágara."
+                >
+                    <img
+                        src="../img/personajes/pam-beesly.png"
+                        alt="Pam Beesly durante su boda con Jim"
+                        loading="lazy"
+                    >
+
+                    <div class="informacion-galeria">
+                        <span>Temporada 6</span>
+                        <h3>La boda</h3>
                     </div>
+                </a>
 
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 6</span>
-                        <h3>La boda de Jim y Pam</h3>
+                <a
+                    href="../img/personajes/michael-scott.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="La despedida de Michael"
+                    data-description="Michael deja Scranton para comenzar una nueva vida con Holly."
+                >
+                    <img
+                        src="../img/personajes/michael-scott.png"
+                        alt="Michael Scott antes de abandonar Scranton"
+                        loading="lazy"
+                    >
 
-                        <p>
-                            Los empleados recrean un baile viral mientras
-                            recorren el pasillo durante la ceremonia en
-                            las Cataratas del Niágara.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Celebración</span>
-                            <strong>Todo el equipo</strong>
-                        </div>
+                    <div class="informacion-galeria">
+                        <span>Temporada 7</span>
+                        <h3>Goodbye, Michael</h3>
                     </div>
-                </article>
+                </a>
 
-                <article class="tarjeta-momento">
-                    <div class="imagen-momento momento-despedida">
-                        <span>06</span>
+                <a
+                    href="../img/personajes/stanley-hudson.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="Pretzel Day"
+                    data-description="El día favorito de Stanley finalmente llega a la oficina."
+                >
+                    <img
+                        src="../img/personajes/stanley-hudson.png"
+                        alt="Stanley Hudson durante Pretzel Day"
+                        loading="lazy"
+                    >
+
+                    <div class="informacion-galeria">
+                        <span>Temporada 3</span>
+                        <h3>Pretzel Day</h3>
                     </div>
+                </a>
 
-                    <div class="contenido-momento">
-                        <span class="temporada-momento">Temporada 7</span>
-                        <h3>La despedida de Michael</h3>
+                <a
+                    href="../img/personajes/toby-flenderson.png"
+                    class="item-galeria glightbox"
+                    data-gallery="galeria-office"
+                    data-title="Recursos Humanos"
+                    data-description="Toby intenta mantener el orden mientras Michael cuestiona su existencia."
+                >
+                    <img
+                        src="../img/personajes/toby-flenderson.png"
+                        alt="Toby Flenderson en Recursos Humanos"
+                        loading="lazy"
+                    >
 
-                        <p>
-                            Michael abandona Scranton para comenzar una nueva
-                            vida con Holly, despidiéndose en secreto de cada
-                            uno de sus compañeros.
-                        </p>
-
-                        <div class="responsable">
-                            <span>Destino</span>
-                            <strong>Colorado</strong>
-                        </div>
+                    <div class="informacion-galeria">
+                        <span>Archivo corporativo</span>
+                        <h3>El enemigo de Michael</h3>
                     </div>
-                </article>
+                </a>
             </div>
         </section>
 
@@ -265,6 +287,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

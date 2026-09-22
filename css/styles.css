@@ -2751,7 +2751,7 @@ body.modal-abierto {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1050px) {
     .navegacion {
         position: relative;
         min-height: 68px;
@@ -3303,7 +3303,7 @@ body.modal-abierto {
     scroll-margin-top: 100px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1050px) {
     .enlace-con-submenu {
         justify-content: space-between;
         border-bottom: 1px solid rgb(255 250 240 / 12%);
@@ -3343,5 +3343,289 @@ body.modal-abierto {
     .submenu a:hover,
     .submenu a:focus {
         padding-left: 35px;
+    }
+}
+
+/* ==================================================
+   CORRECCIÓN GENERAL DE CONTRASTE
+   ================================================== */
+
+:root {
+    --texto-principal: #3d332b;
+    --texto-secundario: #514236;
+    --texto-claro: #fffaf0;
+    --texto-claro-secundario: #f5dfba;
+}
+
+body {
+    color: var(--texto-principal);
+}
+
+/* Textos ubicados sobre fondos claros */
+
+.cantidad-empleados,
+.informacion-personaje > p,
+.cargo,
+.tarjeta-temporada p,
+.contenido-momento > p,
+.responsable span,
+.contenido-frases > div > p,
+.contenido-ficha address,
+.datos-ubicacion span,
+.grilla-normas p,
+.introduccion-solicitud > p,
+.confirmacion-formulario,
+.aceptacion-contacto {
+    color: var(--texto-secundario);
+}
+
+/* Títulos ubicados sobre tarjetas claras */
+
+.titulo-seccion h2,
+.informacion-personaje h3,
+.tarjeta-temporada h3,
+.contenido-momento h3,
+.contenido-frases h2,
+.grilla-normas h3,
+.introduccion-solicitud h3 {
+    color: var(--marron-oscuro);
+}
+
+/* Etiquetas pequeñas sobre fondos claros */
+
+.etiqueta,
+.departamento,
+.periodo,
+.temporada-momento,
+.estado-ubicacion,
+.numero-formulario {
+    color: #762f27;
+    font-weight: 900;
+}
+
+/* Encabezados oscuros de cada página */
+
+.encabezado-pagina {
+    color: var(--texto-claro);
+}
+
+.encabezado-pagina h1 {
+    color: var(--texto-claro);
+    text-shadow: 2px 3px 0 rgb(55 35 20 / 35%);
+}
+
+.encabezado-pagina .etiqueta {
+    color: var(--texto-claro-secundario);
+}
+
+.encabezado-pagina > .contenedor > p:last-child {
+    color: var(--texto-claro);
+}
+
+/* Secciones y componentes con fondo oscuro */
+
+.episodio-destacado,
+.episodio-destacado h2,
+.episodio-destacado p,
+.episodio-destacado strong {
+    color: var(--texto-claro);
+}
+
+.episodio-destacado .etiqueta {
+    color: var(--texto-claro-secundario);
+}
+
+.pie,
+.pie p,
+.pie strong {
+    color: var(--texto-claro);
+}
+
+/* Campos de formularios */
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea,
+.campo-contacto input,
+.campo-contacto select,
+.campo-contacto textarea {
+    color: var(--texto-principal);
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder,
+.campo-contacto input::placeholder,
+.campo-contacto textarea::placeholder {
+    color: #6b5d50;
+    opacity: 1;
+}
+
+/* Botones principales */
+
+.boton-principal {
+    color: var(--texto-claro);
+}
+
+.boton-secundario,
+.boton-limpiar {
+    color: var(--marron-oscuro);
+}
+
+/* Mensajes generados mediante JavaScript */
+
+.respuesta-formulario,
+.respuesta-contacto,
+.resultado-emergencia {
+    color: var(--marron-oscuro);
+}
+
+/* ==================================================
+   AJUSTES RESPONSIVE GENERALES
+   ================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 92%;
+    }
+
+    .logo-principal {
+        font-size: 0.95rem;
+    }
+
+    .logo-secundario {
+        font-size: 0.58rem;
+    }
+
+    .encabezado-pagina {
+        padding-block: 55px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 2.35rem;
+        line-height: 1.05;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .titulo-seccion {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .boton-principal,
+    .boton-secundario,
+    .boton-limpiar {
+        text-align: center;
+    }
+}
+
+/* ==================================================
+   GALERÍA DE IMÁGENES
+   ================================================== */
+
+.galeria-office {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.item-galeria {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+    display: block;
+    background-color: var(--marron-medio);
+    border: 6px solid var(--papel-claro);
+    box-shadow: 6px 8px 0 rgb(101 75 50 / 25%);
+    cursor: zoom-in;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    filter: sepia(18%) saturate(85%);
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.item-galeria:hover img,
+.item-galeria:focus img {
+    transform: scale(1.06);
+    filter: sepia(0%) saturate(100%);
+}
+
+.item-galeria:focus-visible {
+    outline: 4px solid var(--mostaza);
+    outline-offset: 4px;
+}
+
+.informacion-galeria {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 45px 18px 18px;
+    color: var(--papel-claro);
+    background:
+        linear-gradient(
+            transparent,
+            rgb(45 31 21 / 94%)
+        );
+}
+
+.informacion-galeria span {
+    color: #f5d796;
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.informacion-galeria h3 {
+    margin-top: 4px;
+    color: var(--papel-claro);
+    font-size: 1.15rem;
+}
+
+@media (max-width: 900px) {
+    .galeria-office {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .galeria-office {
+        grid-template-columns: 1fr;
+    }
+
+    .item-galeria {
+        height: 360px;
     }
 }
