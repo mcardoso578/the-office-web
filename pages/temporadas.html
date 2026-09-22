@@ -28,13 +28,47 @@
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="temporadas.html" class="activo">Temporadas</a></li>
+                    <li class="item-submenu">
+                        <div class="enlace-con-submenu">
+                            <a href="temporadas.html" class="activo">
+                                Temporadas
+                            </a>
+
+                            <button
+                                type="button"
+                                class="boton-submenu"
+                                aria-label="Mostrar opciones de temporadas"
+                                aria-expanded="false"
+                            >
+                                ▾
+                            </button>
+                        </div>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="temporadas.html#temporadas-iniciales">
+                                    Temporadas 1 a 3
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="temporadas.html#epoca-dorada">
+                                    Temporadas 4 a 6
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="temporadas.html#etapa-final">
+                                    Temporadas 7 a 9
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="momentos.html">Momentos</a></li>
                     <li><a href="ubicacion.html">Ubicación</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
         </div>
     </header>
 
@@ -62,7 +96,7 @@
             </div>
 
             <div class="grilla-temporadas">
-                <article class="tarjeta-temporada">
+                <article id="temporadas-iniciales" class="tarjeta-temporada">
                     <div class="numero-temporada">01</div>
                     <div>
                         <span class="periodo">2005 · 6 episodios</span>
@@ -101,7 +135,7 @@
                     </div>
                 </article>
 
-                <article class="tarjeta-temporada">
+                <article id="epoca-dorada" class="tarjeta-temporada">
                     <div class="numero-temporada">04</div>
                     <div>
                         <span class="periodo">2007–2008 · 19 episodios</span>
@@ -139,7 +173,7 @@
                     </div>
                 </article>
 
-                <article class="tarjeta-temporada">
+                <article id="etapa-final" class="tarjeta-temporada">
                     <div class="numero-temporada">07</div>
                     <div>
                         <span class="periodo">2010–2011 · 26 episodios</span>

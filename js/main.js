@@ -565,3 +565,21 @@ if (formularioContacto && respuestaContacto) {
         respuestaContacto.textContent = "";
     });
 }
+
+/* ==================================================
+   SUBMENÚ DE TEMPORADAS
+   ================================================== */
+
+const botonesSubmenu = document.querySelectorAll(".boton-submenu");
+
+botonesSubmenu.forEach(function (botonSubmenu) {
+    const itemSubmenu = botonSubmenu.closest(".item-submenu");
+    const submenu = itemSubmenu.querySelector(".submenu");
+
+    botonSubmenu.addEventListener("click", function () {
+        const estaAbierto = submenu.classList.toggle("visible");
+
+        botonSubmenu.classList.toggle("abierto", estaAbierto);
+        botonSubmenu.setAttribute("aria-expanded", estaAbierto);
+    });
+});
