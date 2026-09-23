@@ -3629,3 +3629,37 @@ button {
         height: 360px;
     }
 }
+
+/* Corrección del botón de emergencia */
+
+.boton-emergencia {
+    width: 110px;
+    height: 110px;
+    padding: 12px 8px;
+    overflow: hidden;
+    font-size: 0.68rem;
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.boton-emergencia span {
+    margin-bottom: 4px;
+    font-size: 0.52rem;
+    line-height: 1.1;
+    letter-spacing: 0.7px;
+}
+
+@media (max-width: 650px) {
+    .boton-emergencia {
+        width: 90px;
+        height: 90px;
+        padding: 10px 6px;
+        font-size: 0.56rem;
+    }
+
+    .boton-emergencia span {
+        font-size: 0.46rem;
+        letter-spacing: 0.4px;
+    }
+}
