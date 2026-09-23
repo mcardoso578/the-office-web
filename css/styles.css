@@ -3663,3 +3663,28 @@ button {
         letter-spacing: 0.4px;
     }
 }
+
+/* Logo de The Office */
+
+.logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-imagen {
+    width: 145px;
+    height: auto;
+    max-height: 54px;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(2px 3px 1px rgb(42 30 20 / 40%));
+}
+
+@media (max-width: 480px) {
+    .logo-imagen {
+        width: 120px;
+        max-height: 48px;
+    }
+}
