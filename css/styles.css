@@ -1575,20 +1575,16 @@ body {
     position: absolute;
     top: 75px;
     right: 35px;
-    z-index: 2;
-    padding: 10px 16px;
+    padding: 8px 14px;
     color: var(--bordo);
-    background-color: var(--papel-claro);
-    border: 3px solid var(--bordo);
+    border: 4px double var(--bordo);
     border-radius: 3px;
     font-size: 0.75rem;
     font-weight: 900;
-    line-height: 1.2;
     letter-spacing: 2px;
-    white-space: nowrap;
     text-transform: uppercase;
     transform: rotate(7deg);
-    opacity: 0.85;
+    opacity: 0.7;
 }
 
 @media (max-width: 650px) {
@@ -3440,4 +3436,29 @@ button {
         width: 120px;
         max-height: 48px;
     }
+}
+
+/* CORRECCIONES FINALES DE LEGIBILIDAD */
+
+.portada-office .boton-principal {
+    color: var(--marron-oscuro) !important;
+}
+
+.portada-office .boton-secundario {
+    color: var(--papel-claro) !important;
+    background-color: rgb(61 49 37 / 85%) !important;
+    border-color: var(--papel-claro) !important;
+}
+
+.portada-office .boton-secundario:hover {
+    color: var(--marron-oscuro) !important;
+    background-color: var(--papel-claro) !important;
+}
+
+.sello-confidencial {
+    z-index: 2;
+    color: var(--bordo);
+    background-color: var(--papel-claro) !important;
+    border: 3px solid var(--bordo);
+    opacity: 1 !important;
 }
